@@ -33,6 +33,9 @@ func (c *Client) CreateChatCompletionStream(
 	} else if model == "v3" {
 		domain = parameterChatDomainGeneralV3
 		url = c.config.BaseURL + "/v3.1/chat"
+	} else if model == "v3.5" {
+		domain = parameterChatDomainGeneralV3
+		url = c.config.BaseURL + "/v3.5/chat"
 	}
 
 	fullReq := ChatCompletionStreamRequest{
