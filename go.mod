@@ -1,4 +1,4 @@
-module github.com/liudding/go-llm-api
+module github.com/NeufHuang/go-llm-api
 
 go 1.18
 
